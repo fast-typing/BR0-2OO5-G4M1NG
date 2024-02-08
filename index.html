@@ -48,10 +48,12 @@
   <script>
     const animation1 = document.getElementById("forward");
     const svg = document.querySelector("svg");
+    const animateMotion = document.querySelector("animateMotion");
 
     function forwardSVG() {
-      svg.style.width = '50%'
-      svg.style.height = '50%'
+      animateMotion.setAttribute("dur", "1s");
+      svg.style.width = "50%";
+      svg.style.height = "50%";
       animation1.beginElement();
     }
   </script>
